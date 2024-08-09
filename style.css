@@ -12,27 +12,31 @@ header nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    vertical-align: middle;
     width: 98vw;
     height: 80px;
     font-size: 16px;
     position:fixed;
     z-index: 1;
     background-color: white;
+    padding: 16px;
     }
 
     #pinterest-icon{ 
         width: 35px;
         height: 35px;
-        padding: 4px;
+        padding: 0;
     }
     
 
     #pinterest-icon:hover{
         background-color: #e9e9e9;
-        border-radius: 150px;
+        border-radius: 100px;
     }
     .first-list{
         display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .first-list li{
         list-style: none;
@@ -92,6 +96,33 @@ header nav{
         border-radius: 150px;
         cursor: pointer;
     }
+    .left-items{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        vertical-align: middle;
+        ruby-align: center;
+    }
+    .left-items span:hover{
+        background-color: #e9e9e9;
+        border-radius: 150px;
+        cursor: pointer;
+    }
+
+    .left-items span{
+        padding: 8px;
+        color: #767676;
+        font-size: 28px;
+
+    }
+
+    ul{
+        margin-bottom: 0px!important;
+        padding: 1rem!important;
+    }
+
     /* Estilos Main */
     .contenido{
         position: absolute;
@@ -100,7 +131,17 @@ header nav{
     .imagenes{
         columns: 8 240px;
         margin: auto;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
     }
+
+    img:hover{
+        transform: scale(1.02);
+    }
+
+
     .card-image{
         position: relative;
         padding: 6px;
@@ -109,6 +150,8 @@ header nav{
         border-radius: 15px;
         min-width: 240px;
         max-width: 240px;
+        cursor: zoom-in;
+        overflow: hidden;
     }
 
     .card-image:hover > :first-child{ 
@@ -118,6 +161,11 @@ header nav{
     .card-image:hover > *{
         visibility: visible;
         display: inline;
+    }
+
+    .card-image span{
+        cursor: pointer;
+
     }
     .button {
         position: absolute;
@@ -136,7 +184,9 @@ header nav{
         color: white;
         font-size: 16px;
         font-weight: 600;
+        
     }
+
 
     .oculto1 {
         position: absolute;
@@ -165,3 +215,5 @@ header nav{
         visibility: hidden;
         display: none;      
     }
+
+   
